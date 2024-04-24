@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 
 const Login = () => {
+
+  //Sign In & Sing Up Form
+  const [isSignInForm, setIsSignInForm] = useState(true);
+
+  const toggleSignInForm = () => {
+    setIsSignInForm(!isSignInForm);
+  };
+
   return (
     <div>
       <Header />
@@ -11,22 +19,36 @@ const Login = () => {
           alt="Bg-img"
         />
       </div>
-      <form className="p-12 rounded-lg text-white bg-black absolute w-3/12 mt-36 mx-auto right-0 left-0 bg-opacity-85">
-        <h1 className="font-bold text-3xl py-4">Sign In</h1>
+      <form autocomplete="off" className="p-12 rounded-lg text-white bg-black absolute w-3/12 mt-36 mx-auto right-0 left-0 bg-opacity-85">
+        <h1 className="font-bold text-3xl py-4">
+          {isSignInForm ? "Sign In" : "Sign Up"}
+        </h1>
+        { !isSignInForm && <input
+          type="text"
+          placeholder="Enter Your Full Name"
+          className="p-4 rounded-lg my-4 w-full bg-gray-600"
+          autoComplete="off"
+        />}
         <input
           type="text"
           placeholder="Email Addesess"
-          className="p-4 my-4 w-full bg-gray-600"
+          className="p-4 rounded-lg my-4 w-full bg-gray-600"
+          autoComplete="off"
         />
         <input
           type="password"
-          placeholder="password"
-          className="p-4 my-4 w-full bg-gray-600"
+          placeholder="Password"
+          className="p-4 my-4 rounded-lg w-full bg-gray-600"
+          autoComplete="off"
         />
         <button className="p-4 my-6 rounded-lg bg-red-700 w-full">
-          Sign In
+          {isSignInForm ? "Sign In" : "Sign Up"}
         </button>
-        <p className="py-4">New to Netflix? Sign Up Now</p>
+        <p className="py-4 cursor-pointer" onClick={toggleSignInForm}>
+          {isSignInForm
+            ? "New To Netflix? Sign Up Now"
+            : "Already Registed Sign In Now.."}
+        </p>
       </form>
     </div>
   );
