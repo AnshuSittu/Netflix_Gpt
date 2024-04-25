@@ -1,29 +1,32 @@
 
 # Netflix GPT
- -create React App
- -configure tailwind CSS
- -Header
- -Routing
- -Login Form
- -sign Up Form
- -Form Validation
- -useRef Hook 
+<li>
+ create React App
+ configure tailwind CSS
+ Header
+ Routing
+ Login Form
+ sign Up Form
+ Form Validation
+ useRef Hook 
  
  
 
  # Features
-  -Login/Sign Page
-     -Sign In / Sign Up Form
-     -redirect to browse Page
-  -Broswer after Authentication 
-    -Header 
-    -Main Moview
-       -Trailer In Background 
-       -Title and Decription 
-       -Movie Suggestions 
-          -MovieList * N
+  Login/Sign Page
+     Sign In / Sign Up Form
+     redirect to browse Page
+  Broswer after Authentication 
+    Header 
+    Main Moview
+       Trailer In Background 
+       Title and Decription 
+       Movie Suggestions 
+          MovieList * N
 
  - NetflixGPT
-   -Search Bar
-   -Movie SUggestions 
+   Search Bar
+   Movie SUggestions 
+
+   </li>
            
