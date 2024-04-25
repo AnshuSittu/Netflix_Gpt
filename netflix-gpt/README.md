@@ -1,6 +1,6 @@
 
-# Netflix GPT
-<li>
+ Netflix GPT
+
  create React App
  configure tailwind CSS
  Header
@@ -12,7 +12,7 @@
  
  
 
- # Features
+ <b> Features</b>
   Login/Sign Page
      Sign In / Sign Up Form
      redirect to browse Page
@@ -28,5 +28,5 @@
    Search Bar
    Movie SUggestions 
 
-   </li>
+ 
            
