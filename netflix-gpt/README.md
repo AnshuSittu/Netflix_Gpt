@@ -1,5 +1,5 @@
 
- Netflix GPT
+# Netflix GPT
 
  create React App
  configure tailwind CSS
@@ -28,5 +28,5 @@
    Search Bar
    Movie SUggestions 
 
- 
+   </li>
            
