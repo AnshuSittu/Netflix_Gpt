@@ -5,7 +5,8 @@ import { checkValidData } from "../utils/validate";
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
- 
+
+  const name = useRef(null);
   const email = useRef(null);
   const password = useRef(null);
 
@@ -15,17 +16,19 @@ const Login = () => {
   };
 
   const handleButtonClick = () => {
-
     //validate the form data
 
     // console.log(email.current.value);
     // console.log(password.current.value);
 
-    const message = checkValidData(email.current.value, password.current.value);
+    const message = checkValidData(
+      name.current.value,
+      email.current.value,
+      password.current.value
+    );
     setErrorMessage(message);
 
-    
-
+    //once this validation complete then I can proceed to Sign In/UP
   };
 
   return (
@@ -38,6 +41,7 @@ const Login = () => {
         />
       </div>
       <form
+        autoComplete="false"
         onSubmit={(e) => e.preventDefault()}
         className="p-12 rounded-lg text-white bg-black absolute w-3/12 mt-36 mx-auto right-0 left-0 bg-opacity-85"
       >
@@ -46,6 +50,7 @@ const Login = () => {
         </h1>
         {!isSignInForm && (
           <input
+            ref={name}
             type="text"
             placeholder="Enter Your Full Name"
             className="p-4 rounded-lg my-4 w-full bg-gray-600"
