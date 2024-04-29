@@ -8,6 +8,11 @@
  -sign Up Form
  -Form Validation
  -useRef Hook 
+ -Firebase Setup
+ -Delpying Our App to Production
+ -Create SignUp in User Account
+ 
+
  
  
 
