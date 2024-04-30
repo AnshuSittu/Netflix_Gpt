@@ -11,6 +11,9 @@
  -Firebase Setup
  -Delpying Our App to Production
  -Create SignUp in User Account
+ -Implement Sign In user API
+ -Created Redux Store with user slice 
+ -
  
 
  
