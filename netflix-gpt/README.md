@@ -13,7 +13,10 @@
  -Create SignUp in User Account
  -Implement Sign In user API
  -Created Redux Store with user slice 
- -
+ -Implemented Sign Out
+ -Updated Profile
+ -Fetch From TMDB Movies 
+ 
  
 
  
