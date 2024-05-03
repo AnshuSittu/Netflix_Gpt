@@ -7,20 +7,19 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
+
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
-  const navigate = useNavigate();
+
   const dispatch = useDispatch();
 
   const name = useRef(null);
   const email = useRef(null);
   const password = useRef(null);
-
 
   //Sign In & Sing Up Form
   const toggleSignInForm = () => {
@@ -61,16 +60,14 @@ const Login = () => {
           })
             .then(() => {
               const { uid, email, displayName, photoURL } = auth.currentUser;
-        dispatch(
-          addUser({
-            uid: uid,
-            email,
-            displayName: displayName,
-            photoURL: photoURL,
-          })
-        );
-              //Take the user to Browser page as soon as he login with the help of useNavigate
-              navigate("/browse");
+              dispatch(
+                addUser({
+                  uid: uid,
+                  email,
+                  displayName: displayName,
+                  photoURL: photoURL,
+                })
+              );
             })
             .catch((error) => {
               setErrorMessage(error.message);
@@ -94,8 +91,6 @@ const Login = () => {
         .then((userCredential) => {
           const user = userCredential.user;
           console.log(user);
-          //Take the user to Browser page as soon as he login with the help of useNavigate
-          navigate("/browse");
         })
         .catch((error) => {
           const errorCode = error.code;

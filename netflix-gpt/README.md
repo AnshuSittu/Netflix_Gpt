@@ -16,6 +16,10 @@
  -Implemented Sign Out
  -Updated Profile
  -Fetch From TMDB Movies 
+ -Bugfix: Sign up User
+ -BugFix: Display and profile picture update
+ -bugfix: if user is not logged In redirect to login page
+ -bugfix: if user is logged in not redirect to login page 
  
  
 
