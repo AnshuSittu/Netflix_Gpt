@@ -20,6 +20,11 @@
  -BugFix: Display and profile picture update
  -bugfix: if user is not logged In redirect to login page
  -bugfix: if user is logged in not redirect to login page 
+ -unsubscribed to the onAuthStateChanged callback
+ -added hardcoded value to constant file 
+ -Registered  TMDB API movie 
+ -created an App over there on TBDB and get access token
+ -Get Data from TMDB now playing Movies list API 
  
  
 

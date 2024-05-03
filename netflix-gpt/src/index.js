@@ -6,10 +6,12 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+ // <React.StrictMode>
     <App />
-  </React.StrictMode>
+ // </React.StrictMode>
 );
+
+//React.StrictMode removed boz everything comes twice in cosole as it is rendring twince to find consitance if any 
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
