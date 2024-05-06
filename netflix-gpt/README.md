@@ -25,6 +25,8 @@
  -Registered  TMDB API movie 
  -created an App over there on TBDB and get access token
  -Get Data from TMDB now playing Movies list API 
+ -Created Custome Hook for useNowPlayingMovies
+ -Imported useNowPlayingMovies hook On browse page
  
  
 

@@ -1,36 +1,25 @@
-import React, { useEffect } from "react";
+import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 import Header from "./Header";
-import { API_OPTIONS } from "../utils/constants";
-import { useDispatch } from "react-redux";
-import { addNowPlayingMovies } from "../utils/moviesSlice";
+import MainContainer from "./MainContainer";
+import SecondaryContainer from "./SecondaryContainer";
 
 const Browse = () => {
-
-  const dispatch = useDispatch();
-
-  // API call for Movies
-  const getNowPlayingMovies = async () => {
-    const data = await fetch(
-      "https://api.themoviedb.org/3/movie/now_playing?page=1",
-      API_OPTIONS
-    );
-    const json = await data.json();
-    console.log(json.results);
-
-    //Disptaching an action 
-
-    dispatch(addNowPlayingMovies(json.results));
-
-
-  };
-
-  useEffect(() => {
-    getNowPlayingMovies();
-  }, [])
+  // here we have created cutsome hook and exported here to use it
+  useNowPlayingMovies();
 
   return (
     <div>
       <Header />
+      <MainContainer/>
+      <SecondaryContainer/>
+      {/* 
+          MainCOnatiner 
+           -VideoBackground
+           -VideoTItle  
+         SecondayContainer
+            -MovieList *N rows 
+            -Cards *N lots of Cards
+       */}
     </div>
   );
 };
