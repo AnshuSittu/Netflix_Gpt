@@ -27,6 +27,16 @@
  -Get Data from TMDB now playing Movies list API 
  -Created Custome Hook for useNowPlayingMovies
  -Imported useNowPlayingMovies hook On browse page
+ -Created Movie Slice
+ -updated the store movies data
+ -Created main cointainer and secondry container 
+ -fetch Data for trailer viedo
+ -updated the store with triler viedo data
+ -Embbeded the youtube video make it autoplay and mute
+ -added tailwind css to look mainConatier awesome
+ 
+
+
  
  
 

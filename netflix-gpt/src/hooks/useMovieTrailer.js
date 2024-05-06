@@ -20,7 +20,7 @@ const useMOvieTrailer = (movieId) => {
 
     const filterData = json.results.filter((video) => video.type === "Trailer");
     // if Filter data length exist i.e not zero then take filterData other wise take any 1 st viedo
-    const trailer = filterData.length ? filterData[1] : json.results[0];
+    const trailer = filterData.length ? filterData[0] : json.results[0];
 
    // console.log(trailer);
     dispatch(addTrailerVideo(trailer));
