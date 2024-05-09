@@ -34,7 +34,14 @@
  -updated the store with triler viedo data
  -Embbeded the youtube video make it autoplay and mute
  -added tailwind css to look mainConatier awesome
- 
+ -Build Secondary component 
+ -Build Movie List
+ -Build Movie Card
+ -TMDB Image CDN URL Added
+ -Made Browser Page amazing with Tailwind Css
+ -usePopularMovies Custom Hooks
+ -useTrendingMovies Custom Hooks
+ -useUpcomingMovies Custom Hooks
 
 
  
