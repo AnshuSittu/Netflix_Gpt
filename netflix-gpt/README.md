@@ -42,6 +42,8 @@
  -usePopularMovies Custom Hooks
  -useTrendingMovies Custom Hooks
  -useUpcomingMovies Custom Hooks
+ -GPT Search Feature 
+ 
 
 
  
