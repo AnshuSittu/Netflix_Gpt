@@ -43,6 +43,9 @@
  -useTrendingMovies Custom Hooks
  -useUpcomingMovies Custom Hooks
  -GPT Search Feature 
+ -GPT Search bar
+ -added Multi-Lunguage Feature in App
+ -Intigrate GPT API(Get Open AI)
  
 
 
