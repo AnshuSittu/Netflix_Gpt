@@ -66,10 +66,10 @@ const Header = () => {
   };
 
   return (
-    <div className="absolute flex justify-between w-full z-10 px-8 py-2 bg-gradient-to-b from-black">
-      <img src={LOGO} alt="Logo" className="w-44 cursor-pointer" />
+    <div className="absolute justify-between w-full z-10 px-8 py-2 bg-gradient-to-b from-black flex flex-col md:flex-row">
+      <img src={LOGO} alt="Logo" className="w-44 cursor-pointer mx-auto md:mx-0" />
       {user && (
-        <div className="flex p-2">
+        <div className="flex p-2 justify-between">
           {/* here showGptSearch is true then this <select> will come other wise it will not i.e it will show on only GPT page  */}
           {showGptSearch && (
             <select
@@ -91,7 +91,7 @@ const Header = () => {
             {showGptSearch ? "Home Page" : "GPT Search"}{" "}
             {/* here we are chnaging the name of btn when we are on GPT search it will show HomePage to go back on netflix if it on listing page it will show GPT search */}
           </button>
-          <img className="w-12 h-12" alt="usericon" src={user.photoURL} />
+          <img className=" hidden md:inline-block w-12 h-12" alt="usericon" src={user.photoURL} />
           <button onClick={handleSignOut} className="font-bold text-white">
             Sign Out
           </button>

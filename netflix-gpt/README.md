@@ -45,7 +45,16 @@
  -GPT Search Feature 
  -GPT Search bar
  -added Multi-Lunguage Feature in App
+ 
  -Intigrate GPT API(Get Open AI)
+ -GPT Search Open AI key
+ -GPT Search API call
+ -fetched GPT movie Suggestion from tmdb
+ -Created GPTSLive added data
+ -resued MovieList Component tp make suggestions container
+ -Momoization 
+ -added .env file to git ignore
+ -Made our side Resposnive 
  
 
 
